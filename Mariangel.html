@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ramo de Flores Amarillas</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(to bottom,#87ceeb,#fef9d7);
+    overflow:hidden;
+    font-family:'Segoe UI', sans-serif;
+}
+
+.mensaje{
+    font-size:2.2rem;
+    font-weight:bold;
+    color:#d63384;
+    margin-bottom:40px;
+    text-shadow:2px 2px 5px rgba(0,0,0,.2);
+}
+
+.ramo{
+    position:relative;
+    width:400px;
+    height:500px;
+}
+
+.flor{
+    position:absolute;
+}
+
+.centro{
+    position:absolute;
+    width:43px;
+    height:43px;
+    background:#8b5a2b;
+    border-radius:50%;
+    top:20px;
+    left:-5px;
+    z-index:2;
+}
+
+.petalo{
+    position:absolute;
+    width:35px;
+    height:50px;
+    background:#ffd700;
+    border-radius:50%;
+    transform-origin:center 40px;
+}
+
+.petalo:nth-child(1){ transform:rotate(0deg) translateY(-28px);}
+.petalo:nth-child(2){ transform:rotate(45deg) translateY(-28px);}
+.petalo:nth-child(3){ transform:rotate(90deg) translateY(-28px);}
+.petalo:nth-child(4){ transform:rotate(135deg) translateY(-28px);}
+.petalo:nth-child(5){ transform:rotate(180deg) translateY(-28px);}
+.petalo:nth-child(6){ transform:rotate(225deg) translateY(-28px);}
+.petalo:nth-child(7){ transform:rotate(270deg) translateY(-28px);}
+.petalo:nth-child(8){ transform:rotate(315deg) translateY(-28px);}
+
+.tallo{
+    position:absolute;
+    width:6px;
+    height:180px;
+    background:#228b22;
+    top:62px;
+    left:13px;
+    z-index:0;
+}
+
+.hoja{
+    position:absolute;
+    width:30px;
+    height:16px;
+    background:#32cd32;
+    border-radius:30px 0 30px 0;
+}
+
+.hoja.izq{
+    top:150px;
+    left:-12px;
+    transform:rotate(-35deg);
+}
+
+.hoja.der{
+    top:190px;
+    left:13px;
+    transform:rotate(145deg);
+}
+
+.papel{
+    position:absolute;
+    bottom: 30px;;
+    left:-20px;
+    width:400px;
+    height:280px;
+    background:#f5c6a5;
+    clip-path:polygon(0 0,100% 0,50% 100%);
+    opacity:.9;
+    z-index: 5;
+}
+
+.cinta{
+    position:absolute;
+    bottom:160px;
+    left:150px;
+    width:40px;
+    height:40px;
+    background:#ff69b4;
+    transform:rotate(45deg);
+    z-index: 6;
+}
+
+.cinta::before,
+.cinta::after{
+    content:"";
+    position:absolute;
+    width:40px;
+    height:40px;
+    background:#ff69b4;
+    border-radius:50%;
+}
+
+.cinta::before{
+    left:-20px;
+}
+
+.cinta::after{
+    top:-20px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="mensaje">🤍 Te amo mariangel, y aunque me has dicho mil y 1 veces que seguramente tu y yo no estaremos juntos, te seguiré queriendo, y seguiré queriendo estar junto a ti, siempre que me lo permitas, te amo 🤍</div>
+
+<div class="ramo">
+
+    <!-- Flor 1 -->
+    <div class="flor" style="left:40px; top:20px;">
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="centro"></div>
+        <div class="tallo"></div>
+        <div class="hoja izq"></div>
+        <div class="hoja der"></div>
+    </div>
+
+    <!-- Flor 2 -->
+    <div class="flor" style="left:150px; top:0px;">
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="centro"></div>
+        <div class="tallo"></div>
+        <div class="hoja izq"></div>
+        <div class="hoja der"></div>
+    </div>
+
+    <!-- Flor 3 -->
+    <div class="flor" style="left:260px; top:20px;">
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="centro"></div>
+        <div class="tallo"></div>
+        <div class="hoja izq"></div>
+        <div class="hoja der"></div>
+    </div>
+
+    <!-- Flor 4 -->
+    <div class="flor" style="left:95px; top:90px;">
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="centro"></div>
+        <div class="tallo"></div>
+        <div class="hoja izq"></div>
+        <div class="hoja der"></div>
+    </div>
+
+    <!-- Flor 5 -->
+    <div class="flor" style="left:210px; top:90px;">
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="centro"></div>
+        <div class="tallo"></div>
+        <div class="hoja izq"></div>
+        <div class="hoja der"></div>
+    </div>
+
+    <div class="papel"></div>
+    <div class="cinta"></div>
+
+</div>
+
+</body>
+</html>
